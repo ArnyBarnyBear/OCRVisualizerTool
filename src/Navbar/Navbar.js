@@ -7,7 +7,7 @@ export class Navbar extends Component {
         return (
             <div className="navbar">
             <div className="leftSide"> {/* add a leftside class */ }
-              <Link to="/"> Home </Link>
+              <Link to="/OCRVisualizerTool"> Home </Link>
               <Link to="/pathfinding"> Pathfinding </Link>
               <Link to="/sorting"> Sorting </Link>
             </div>

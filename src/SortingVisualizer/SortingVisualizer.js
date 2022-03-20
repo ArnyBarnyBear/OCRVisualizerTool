@@ -7,13 +7,13 @@ export class SortingVisualizer extends Component {
         super();
 
         this.state = {
-          array: [],
-          arrayBars: 50,
+          array: [], //array to store the elemetns to be sorted
+          arrayBars: 50, //number of array bars
           primaryColour: "#0388fc" , //Base colour of bars
-          secondaryColour: "red",
-          width: 10,
-          animationSpeed: 3,
-          value: []
+          secondaryColour: "red", //colour of the swaps.
+          width: 10, // size in pixels of the width of each bar
+          animationSpeed: 3, //speed in milliseconds of each animation
+          value: [] //array to store the user input
         };
         this.handleChange = this.handleChange.bind(this); 
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -74,7 +74,7 @@ export class SortingVisualizer extends Component {
           }
           
         }
-        const array = input.split(',').map(Number)
+        const array = input.split(',').map(Number) //go through the array, and map each element excluding commas to an integer.
         if (array.length < 10 || array.length > 100) {//check if the length of the array is smaller than 10 or bigger than 100.
           alert("Your array must only have 10-100 elements!. \nan example input would be the following: \n173, 93, 73, 85, 52, 162, 189, 117, 136, 129, 168, 195, 141, 100, 153")
           return

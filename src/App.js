@@ -14,7 +14,7 @@ function App() {
        path to the home component.*/}
        <Navbar/>
         <Switch>
-          <Route path="/" exact component={Home}/>
+          <Route path="/OCRVisualizerTool" exact component={Home}/>
           <Route path="/pathfinding" exact component={PathfindingVisualizer} />
           <Route path="/sorting" exact component={SortingVisualizer} /> 
         </Switch>
