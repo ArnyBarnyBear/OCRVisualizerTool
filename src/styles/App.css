@@ -1,0 +1,14 @@
+
+.App {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+  Button {
+    margin: 5px;
+  }
+  
+  Button:hover {
+    color: rgb(116, 193, 252);
+  }
+  
+  

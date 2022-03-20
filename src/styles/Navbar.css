@@ -1,0 +1,31 @@
+.navbar { 
+    width: 100%; /* make the width the whole page long. */
+    height: 100%; 
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar .leftSide {
+    flex: 50%; /* make it so the leftside of the navbar is only 50% of the width */
+    display: flex; /* keep the text in the navbar centered */ 
+    padding-left: 150px; /* make it so there is a bit of a gap between the left side and the first button on the navbar */
+  }
+  
+
+  
+  .navbar a { /*keep the colour of the text black, and make add a margin betwene the text */
+    color: white; 
+    margin: 20px;
+    text-decoration: none;
+
+
+    
+  }
+  

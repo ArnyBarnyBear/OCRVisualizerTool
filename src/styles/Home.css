@@ -1,0 +1,28 @@
+.home { /*center the text, and add the font */
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+  .headerContainer h1 { /*change the font size to be larger and keep the text colour black */
+    font-size: 90px;
+    color: black;
+    font-weight: 50; /*reduce the thickness*/
+  }
+  .headerContainer p { /*change the font size to be larger and keep the text colour black */
+    font-size: 40px;
+    color: black;
+  }
+  
+  .headerContainer button { 
+    background-color: black; /* Make the background colour of the button white and the text white. */
+    color: white;
+    height: 60px; /*Change the dimensions of the button to take up more space */
+    width: 220px;
+    cursor: pointer; /* Make it so a pointer appears when hovering over the button */
+    font-size: 30px; 
+    margin:5px; /* add some space between the buttons so they aernt touching*/
+    border:none; /* remove the border from the button */
+    border-radius: 10px; /*make the button rounder */
+    margin-right: 50px; /*add a gap between the two buttons */
+
+  }
+    

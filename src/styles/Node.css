@@ -1,0 +1,80 @@
+.node {
+    width: 25px;
+    height: 25px;
+    outline: 1px solid grey; /*create a border for the node otherwise it wont be visible on a white background */
+    display: inline-block; /* display nodes one after each other horizontally */
+  }
+  
+  .node-finish {
+    background-color: red;
+  }
+    
+  .node-start {
+    background-color: green;
+  }
+  .node-wall {
+    background-color: black;
+  }
+
+
+
+  
+
+.node-visited {
+  animation-name: visitedAnimation; /* create an animation called node visited which is played for the node-visited class */
+  animation-fill-mode: forwards; /*keep the animation on screen after being completed */
+  animation-duration: 1.5s; /*take 1.5 seconds to fill in the node with the colour */
+  
+}
+
+@keyframes visitedAnimation {
+  0% {
+    transform: scale(0.3); /* added extra animations to occur at different percentages, in order to create a smoother overall animation */
+    border-radius: 50%;
+    outline: 0;
+    background-color: rgba(89, 224, 202, 0.75);
+    border-radius: 100%;
+  }
+  50% {
+    outline: 0;
+    background-color: rgba(12, 37, 180, 0.75);
+  }
+
+  60% {
+    transform: scale(1);
+    outline: 1px;
+    background-color: rgba(60, 96, 196, 0.75);
+  }
+
+  100% { /* for 100% of the frames, change the colour of the node to the following rgba values */ 
+    transform: scale(1);
+    background-color: rgba(129, 209, 219, 0.774);
+  }
+}
+
+.node-path {
+  animation-name: shortestPath; /* create an animation called shortestpath which is played for the node-path class */
+  animation-fill-mode: forwards; /*keep the animation on screen after being completed */
+  animation-duration: 1.5s; /*take 1.5 seconds to fill in the node with the colour */
+  
+}
+@keyframes shortestPath {
+  
+  0% {
+    transform: scale(0.6);
+    background-color: rgb(167, 66, 245); /* added extra animations to occur at different percentages, in order to create a smoother overall animation */
+  }
+
+  50% {
+    transform: scale(1.2);
+    background-color: rgb(167, 66, 245);
+  }
+  100% { /* for 100% of the frames, change the colour of the node to the following rgba values */ 
+    transform: scale(1);
+    background-color: rgb(167, 66, 245);
+  }
+}
+
+
+
+

@@ -1,0 +1,7 @@
+  .array-bar {
+    display: inline-block;
+    margin: 0 1px; /*add a margin between each array bar, and some space between the top of the page */
+    margin-top:100px;
+  
+  }
+  

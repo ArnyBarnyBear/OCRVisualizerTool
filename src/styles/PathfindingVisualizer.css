@@ -1,0 +1,7 @@
+.grid{
+    margin-top: 75px; 
+    margin-left: 0; /*remove the spaces between the horizontal nodes*/
+    line-height: 0; /*remove the spaces between the vertical nodes */
+    width: 100%;
+    text-align: center;
+}
